@@ -1,0 +1,33 @@
+CERCANIAS - FUENTES Y ESTADO DEL PROTOTIPO
+
+Contenido turístico y fotografías
+Las fotografías de lugares son imágenes reales de Marcos Paz publicadas por fuentes locales/institucionales. Se cargan desde sus servidores originales; por eso se necesita conexión a internet y la disponibilidad puede depender del sitio de origen.
+
+- Plaza General San Martín: Municipio de Marcos Paz, https://marcospaz.net/municipiomarcospaz/la-ciudad/qué-visitar/item/8258-plaza-general-san-martín.html
+- Templo San Marcos Evangelista: Municipio de Marcos Paz, https://www.marcospaz.net/municipiomarcospaz/la-ciudad/qué-visitar/templo-san-marcos-evangelista.html
+- Museo de Ciencias Naturales Lucas Kraglievich: Municipio de Marcos Paz, https://www.marcospaz.net/municipiomarcospaz/la-ciudad/qué-visitar/museo-de-ciencias-naturales.html
+- Casa de la Cultura: Municipio de Marcos Paz, https://www.marcospaz.net/municipiomarcospaz/la-ciudad/qué-visitar/casa-de-la-cultura.html
+- Reserva Natural El Durazno: Marcos Paz Conectada, https://app.marcospazconectada.com/reserva-natural-el-durazno/
+- Jardín Botánico Florencio Malatesta: Municipio de Marcos Paz, https://www.marcospaz.gov.ar/la-ciudad/qué-visitar/itemlist/category/1-la-ciudad.html
+- Centro Recreativo Inchausti: BAFILMA, https://bafilma.gba.gob.ar/locaciones/marcos-paz/centro-recreativo-inchausti
+- Locomotora y zona ferroviaria: Municipio de Marcos Paz, https://www.marcospaz.net/municipiomarcospaz/la-ciudad/sobre-marcos-paz/historia.html
+
+Comercios
+Los nombres y domicilios iniciales se tomaron del directorio municipal “Dónde comer”: https://marcospaz.gov.ar/la-ciudad/marcos-paz/dónde-comer.html
+Ese directorio puede contener datos desactualizados. Verificar actividad, dirección, horarios y teléfonos antes de visitar. No se afirma que los comercios estén afiliados a Cercanías.
+
+Estado de funciones
+- Navegación, búsqueda y filtros: prototipo frontend.
+- Mapa: Leaflet + OpenStreetMap; los marcadores y coordenadas son orientativos, no un relevamiento GPS.
+- Reservas: demostración local en el navegador (localStorage). No envía solicitudes al comercio ni confirma disponibilidad real.
+- Eventos: sección preparada, sin agenda automática ni carga de eventos desde backend.
+- Experiencia Plus: sugerencias por reglas simples; no es todavía un sistema de IA y no calcula distancias ni tiempos reales.
+- Pagos: no procesa dinero. Para producción se requiere backend y proveedor de pagos con validación de notificaciones.
+
+Próximos pasos técnicos
+1. Crear backend y base de datos (por ejemplo Supabase/PostgreSQL).
+2. Crear roles de usuario, comercio y administrador.
+3. Permitir que comercios reclamen/administren sus fichas tras verificación.
+4. Implementar eventos con fechas, fuentes y moderación.
+5. Implementar reservas con disponibilidad real y notificaciones.
+6. Integrar pagos mediante checkout oficial y validación segura en servidor.
